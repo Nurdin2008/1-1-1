@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жаңы Жылдык Куттуктоо</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .fireworks {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Жаңы Жылдык Куттуктоо</h1>
+    <div class="container">
+        <label for="relation">Кимиси болосуз?</label>
+        <select id="relation">
+            <option value="эжениз">Эжениз</option>
+            <option value="агасы">Аганыз</option>
+            <option value="сиңдиси">Сиңдиңиз</option>
+            <option value="иниси">Ининиз</option>
+            <option value="досунуз">Досунуз</option>
+            <option value="курбунуз">Курбунуз</option>
+            <option value="неберениз">Неберениз</option>
+            <option value="баланыз">Баланыз</option>
+        </select>
+        
+        <br><br>
+        <label for="name">Аты:</label>
+        <input type="text" id="name" placeholder="Атынызды жазыныз" />
+        <br><br>
+        <button class="btn" onclick="generateGreeting()">Куттуктоо түзүү</button>
+        <div class="output" id="output"></div>
+        <img id="image" src="" alt="" style="display: none;" />
+        <!-- Салют сүрөтү -->
+        <img class="fireworks" src="https://gdb.rferl.org/47b38ab7-a15f-432a-b9ae-5fc0c237babb_cx0_cy13_cw0_w408_r1_s.jpg" alt="Жаңы жылдык салют">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
